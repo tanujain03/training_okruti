@@ -23,7 +23,6 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body("Users created successfully");
     }
 
-
     //get user by ID
     @GetMapping("{id}")
     public ResponseEntity <User> getUserById(@PathVariable("id") Long id){
